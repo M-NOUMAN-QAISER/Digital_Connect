@@ -1,0 +1,129 @@
+.hole{
+    background-color: #1f1f1f;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.full-page{
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr) repeat(4, minmax(48px, 1fr));
+    grid-row: repeat(auto-fill, 1fr);
+    column-gap: 15px;
+    margin-bottom: 50px;
+
+}
+.profile-name{
+    color: #ddd;
+}
+.fav {
+    color: #ddd;
+}
+.left-side{
+    grid-column: 1 / 9;
+    margin: 25px;
+    padding: 25px;
+}
+
+.right-side{
+    grid-column: 9 / -1;
+    padding: 22px;
+    border-radius: 18px;
+}
+.right-side .profile-name p{
+    color: #ddd;
+}
+#side-profile{
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+#side-profile a{
+    text-decoration: none;
+}
+#side-profile img{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0 14px #000000a6;
+}
+#side-profile .profile-name{
+    margin-top: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+#side-profile .followers{
+    color: #125c72;
+    font-size: 20px;
+}
+#side-profile .bio{
+    margin-top: 10px;
+    text-align: justify;
+}
+#side-profile .edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 17px;
+}
+#side-profile .edit i{
+    margin-left: 3px;
+    font-size: 14px;
+}
+#accounts{
+    width: 90%;
+    background: rgb(62 62 62);
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 22px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accounts-links{
+    margin-top: 40px;
+}
+.accounts-links ul{
+    padding-left: 0 !important;
+}
+.accounts-links li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+.profile-link{
+    display: flex;
+    width: 100%;
+}
+.profile-link .profile-img{
+    width: 55px;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+.profile-link a{
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+}
+.profile-link .bio{
+    color: #d3d3d3;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.profile-link .bid-btn{
+    background: rgb(255, 112, 112);
+    color: rgb(247, 247, 247);
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 7px 25px;
+    border: none;
+    border-radius: 23px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
